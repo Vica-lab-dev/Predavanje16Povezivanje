@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unos proizvoda</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+<nav class="background navigation flex padding border margin">
+    <a class="color" href="Registracija.html">Registracija</a>
+    <a class="color" href="Pretraga.html">Pretraga</a>
+    <a class="color" href="Modeli/Izlistavanje.php">Izlistavanje</a>
+    <a class="color" href="UnosProizvoda.html">Dodavanje Proizvoda</a>
+    <a class="color" href="Login.html">Login</a>
+</nav>
+
+<form action="Modeli/UnosProizvoda.php" method="GET">
+    <div class="marginTL">
+        <input type="text" name="ime_proizvoda" placeholder="Unesite ime proizvoda" required>
+        <input type="text" name="opis" placeholder="Unesite opis proizvoda" required>
+        <input type="number" name="cena" placeholder="Unesite cenu proizvoda" required>
+        <input type="text" name="slika" placeholder="Unesite sliku proizvoda" required>
+        <input type="number" name="kolicina" placeholder="Unesite kolicinu proizvoda" required>
+        <button>Dodaj Proizvod</button>
+    </div>
+
+</form>
+</body>
+</html>

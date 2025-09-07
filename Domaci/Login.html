@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <nav class="background navigation flex padding border margin">
+        <a class="color" href="Registracija.html">Registracija</a>
+        <a class="color" href="Pretraga.html">Pretraga</a>
+        <a class="color" href="Modeli/Izlistavanje.php">Izlistavanje</a>
+        <a class="color" href="UnosProizvoda.html">Dodavanje Proizvoda</a>
+        <a class="color" href="Login.html">Login</a>
+    </nav>
+
+    <form class="marginTL" action="Modeli/Login.php" method="POST">
+        <div>
+            <input type="email" name="LoginEmail" placeholder="Unesite Vas email" required>
+            <input type="password" name="LoginSifra" placeholder="Unesite Vasu lozinku">
+            <button>Login</button>
+        </div>
+    </form>
+</body>
+</html>

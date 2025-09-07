@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.background{
+    background-color: mediumblue;
+}
+
+.color{
+    color: white;
+}
+
+.navigation a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.padding{
+    padding: 10px;
+}
+
+.border{
+    border-radius: 40px;
+}
+
+.margin{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.marginTL{
+    margin-top: 5px;
+    margin-left: 20px;
+}
