@@ -2,36 +2,36 @@
 
     require_once '../Modeli/baza.php';
 
-    if(!isset($_GET['ime_proizvoda']) || empty($_GET['ime_proizvoda']))
+    if(!isset($_POST['ime_proizvoda']) || empty($_POST['ime_proizvoda']))
     {
         die("Ime proizvoda nije uneto!");
     }
 
-    if(!isset($_GET['opis']) || empty($_GET['opis']))
+    if(!isset($_POST['opis']) || empty($_POST['opis']))
     {
         die("Opis nije unet!");
     }
 
-    if(!isset($_GET['cena']) || empty($_GET['cena']))
+    if(!isset($_POST['cena']) || empty($_POST['cena']))
     {
         die("Cena nije uneta!");
     }
 
-    if(!isset($_GET['slika']) || empty($_GET['slika']))
+    if(!isset($_POST['slika']) || empty($_POST['slika']))
     {
         die("Slika nije uneta!");
     }
 
-    if(!isset($_GET['kolicina']) || empty($_GET['kolicina']))
+    if(!isset($_POST['kolicina']) || empty($_POST['kolicina']))
     {
         die("Kolicina nije uneta!");
     }
 
-    $ime_proizvoda = $_GET['ime_proizvoda'];
-    $opis_proizvoda = $_GET['opis'];
-    $cena = $_GET['cena'];
-    $slika = $_GET['slika'];
-    $kolicina = $_GET['kolicina'];
+    $ime_proizvoda = $_POST['ime_proizvoda'];
+    $opis_proizvoda = $_POST['opis'];
+    $cena = $_POST['cena'];
+    $slika = $_POST['slika'];
+    $kolicina = $_POST['kolicina'];
 
     $rezultat = $baza->query("SELECT * FROM proizvodi WHERE ime_proizvoda = '$ime_proizvoda'");
 

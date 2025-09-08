@@ -4,12 +4,12 @@
 
 
 
-    if(!isset($_POST["email"]) || empty($_POST["email"]))
+    if(!isset($_GET["email"]) || empty($_GET["email"]))
     {
         die("Nije unet email!");
     }
 
-    if(!isset($_POST["sifra"]) || empty($_POST["sifra"]))
+    if(!isset($_GET["sifra"]) || empty($_GET["sifra"]))
     {
         die("Sifra nije uneta, unesite je!");
     }
