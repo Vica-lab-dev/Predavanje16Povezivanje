@@ -43,5 +43,10 @@
     else
     {
         $baza->query("INSERT INTO proizvodi (ime_proizvoda, opis, cena, slika, kolicina) 
-        VALUES ('$ime_proizvoda', '$opis_proizvoda', $cena, '$slika', $kolicina )");
+        VALUES ('$ime_proizvoda', '$opis_proizvoda', '$cena', '$slika', $kolicina )");
+        echo "Uspesno dodat proizvod u bazu podataka!";
     }
+
+?>
+
+
